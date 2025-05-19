@@ -1,0 +1,175 @@
+{
+  "ships": {
+    "battleship_iowa": {
+      "current": "assets/placeholders/ships/battleship_iowa.png",
+      "final": "assets/final/ships/battleship_iowa.png",
+      "width": 512,
+      "height": 256,
+      "replaced": false,
+      "description": "Iowa Class Battleship"
+    },
+    "battleship_yamato": {
+      "current": "assets/placeholders/ships/battleship_yamato.png",
+      "final": "assets/final/ships/battleship_yamato.png",
+      "width": 512,
+      "height": 256,
+      "replaced": false,
+      "description": "Yamato Class Battleship"
+    },
+    "carrier_essex": {
+      "current": "assets/placeholders/ships/carrier_essex.png",
+      "final": "assets/final/ships/carrier_essex.png",
+      "width": 512,
+      "height": 256,
+      "replaced": false,
+      "description": "Essex Class Aircraft Carrier"
+    },
+    "cruiser_baltimore": {
+      "current": "assets/placeholders/ships/cruiser_baltimore.png",
+      "final": "assets/final/ships/cruiser_baltimore.png",
+      "width": 384,
+      "height": 192,
+      "replaced": false,
+      "description": "Baltimore Class Cruiser"
+    },
+    "destroyer_fletcher": {
+      "current": "assets/placeholders/ships/destroyer_fletcher.png",
+      "final": "assets/final/ships/destroyer_fletcher.png",
+      "width": 256,
+      "height": 128,
+      "replaced": false,
+      "description": "Fletcher Class Destroyer"
+    },
+    "submarine_gato": {
+      "current": "assets/placeholders/ships/submarine_gato.png",
+      "final": "assets/final/ships/submarine_gato.png",
+      "width": 256,
+      "height": 128,
+      "replaced": false,
+      "description": "Gato Class Submarine"
+    },
+    "transport": {
+      "current": "assets/placeholders/ships/transport.png",
+      "final": "assets/final/ships/transport.png",
+      "width": 256,
+      "height": 128,
+      "replaced": false,
+      "description": "Transport Ship"
+    }
+  },
+  "aircraft": {
+    "fighter_f4f": {
+      "current": "assets/placeholders/aircraft/fighter_f4f.png",
+      "final": "assets/final/aircraft/fighter_f4f.png",
+      "width": 128,
+      "height": 128,
+      "replaced": false,
+      "description": "F4F Wildcat Fighter"
+    },
+    "bomber_sbd": {
+      "current": "assets/placeholders/aircraft/bomber_sbd.png",
+      "final": "assets/final/aircraft/bomber_sbd.png",
+      "width": 128,
+      "height": 128,
+      "replaced": false,
+      "description": "SBD Dauntless Dive Bomber"
+    },
+    "torpedo_tbf": {
+      "current": "assets/placeholders/aircraft/torpedo_tbf.png",
+      "final": "assets/final/aircraft/torpedo_tbf.png",
+      "width": 128,
+      "height": 128,
+      "replaced": false,
+      "description": "TBF Avenger Torpedo Bomber"
+    }
+  },
+  "map": {
+    "pacific": {
+      "current": "assets/placeholders/map/pacific.png",
+      "final": "assets/final/map/pacific.png",
+      "width": 2048,
+      "height": 1024,
+      "replaced": false,
+      "description": "Pacific Ocean Strategic Map"
+    },
+    "base_naval": {
+      "current": "assets/placeholders/map/base_naval.png",
+      "final": "assets/final/map/base_naval.png",
+      "width": 128,
+      "height": 128,
+      "replaced": false,
+      "description": "Naval Base Icon"
+    },
+    "base_army": {
+      "current": "assets/placeholders/map/base_army.png",
+      "final": "assets/final/map/base_army.png",
+      "width": 128,
+      "height": 128,
+      "replaced": false,
+      "description": "Army Base Icon"
+    }
+  },
+  "ui": {
+    "button_attack": {
+      "current": "assets/placeholders/ui/button_attack.png",
+      "final": "assets/final/ui/button_attack.png",
+      "width": 128,
+      "height": 64,
+      "replaced": false,
+      "description": "Attack Button"
+    },
+    "button_move": {
+      "current": "assets/placeholders/ui/button_move.png",
+      "final": "assets/final/ui/button_move.png",
+      "width": 128,
+      "height": 64,
+      "replaced": false,
+      "description": "Move Button"
+    },
+    "panel_fleet": {
+      "current": "assets/placeholders/ui/panel_fleet.png",
+      "final": "assets/final/ui/panel_fleet.png",
+      "width": 512,
+      "height": 384,
+      "replaced": false,
+      "description": "Fleet Information Panel"
+    },
+    "panel_base": {
+      "current": "assets/placeholders/ui/panel_base.png",
+      "final": "assets/final/ui/panel_base.png",
+      "width": 512,
+      "height": 384,
+      "replaced": false,
+      "description": "Base Information Panel"
+    }
+  },
+  "effects": {
+    "explosion_small": {
+      "current": "assets/placeholders/effects/explosion_small.png",
+      "final": "assets/final/effects/explosion_small.png",
+      "width": 128,
+      "height": 128,
+      "replaced": false,
+      "description": "Small Explosion Effect",
+      "frames": 8
+    },
+    "explosion_large": {
+      "current": "assets/placeholders/effects/explosion_large.png",
+      "final": "assets/final/effects/explosion_large.png",
+      "width": 256,
+      "height": 256,
+      "replaced": false,
+      "description": "Large Explosion Effect",
+      "frames": 8
+    },
+    "cannon_fire": {
+      "current": "assets/placeholders/effects/cannon_fire.png",
+      "final": "assets/final/effects/cannon_fire.png",
+      "width": 128,
+      "height": 128,
+      "replaced": false,
+      "description": "Cannon Fire Effect",
+      "frames": 5
+    }
+  }
+}

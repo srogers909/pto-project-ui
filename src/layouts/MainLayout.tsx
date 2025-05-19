@@ -10,6 +10,7 @@ const MainLayout: React.FC = () => {
           <ul className="nav-links">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/map">Map</Link></li>
+            <li><Link to="/assets">Assets</Link></li>
             <li><Link to="/about">About</Link></li>
           </ul>
         </nav>

@@ -1,0 +1,76 @@
+.asset-manager-page {
+  padding: 20px;
+}
+
+.asset-manager-page h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.asset-manager-page p {
+  margin-bottom: 30px;
+  color: #666;
+  max-width: 800px;
+  line-height: 1.5;
+}
+
+.asset-manager-component {
+  margin-top: 30px;
+}
+
+.asset-manager-component .actions {
+  margin-bottom: 20px;
+}
+
+.asset-manager-component .actions button {
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.asset-manager-component .actions button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.asset-manager-component .progress {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+.asset-manager-component .progress p {
+  margin-bottom: 10px;
+}
+
+.asset-manager-component .progress progress {
+  width: 100%;
+  height: 20px;
+}
+
+.error-message {
+  padding: 20px;
+  background-color: #ffebee;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.error-message h2 {
+  color: #d32f2f;
+  margin-bottom: 10px;
+}
+
+.error-message button {
+  padding: 8px 16px;
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
