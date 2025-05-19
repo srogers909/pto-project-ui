@@ -1,0 +1,207 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'sass:color';
+
+// Reset and base styles
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $dark-color;
+  background-color: $light-color;
+}
+
+#root {
+  height: 100%;
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: $spacing-md;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1 { @include heading-1; }
+h2 { @include heading-2; }
+h3 { @include heading-3; }
+h4 { @include heading-4; }
+
+p {
+  margin-bottom: $spacing-md;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+  
+  &:hover {
+    color: color.adjust($primary-color, $lightness: -10%);
+    text-decoration: underline;
+  }
+}
+
+// Layout
+.container {
+  width: 100%;
+  padding-right: $spacing-md;
+  padding-left: $spacing-md;
+  margin-right: auto;
+  margin-left: auto;
+  
+  @include responsive(sm) {
+    max-width: 540px;
+  }
+  
+  @include responsive(md) {
+    max-width: 720px;
+  }
+  
+  @include responsive(lg) {
+    max-width: 960px;
+  }
+  
+  @include responsive(xl) {
+    max-width: 1140px;
+  }
+}
+
+// Buttons
+.btn {
+  @include button-base;
+  
+  &.btn-primary {
+    @include button-variant(
+      $primary-color, 
+      $primary-color, 
+      color.adjust($primary-color, $lightness: -10%), 
+      color.adjust($primary-color, $lightness: -12.5%)
+    );
+  }
+  
+  &.btn-secondary {
+    @include button-variant(
+      $secondary-color, 
+      $secondary-color, 
+      color.adjust($secondary-color, $lightness: -10%), 
+      color.adjust($secondary-color, $lightness: -12.5%)
+    );
+  }
+  
+  &.btn-success {
+    @include button-variant(
+      $success-color, 
+      $success-color, 
+      color.adjust($success-color, $lightness: -10%), 
+      color.adjust($success-color, $lightness: -12.5%)
+    );
+  }
+  
+  &.btn-danger {
+    @include button-variant(
+      $danger-color, 
+      $danger-color, 
+      color.adjust($danger-color, $lightness: -10%), 
+      color.adjust($danger-color, $lightness: -12.5%)
+    );
+  }
+}
+
+// Map container
+.map-container {
+  width: 100%;
+  height: 500px;
+  border: $border-width solid $border-color;
+  border-radius: $border-radius;
+  @include shadow;
+  
+  @include responsive(md) {
+    height: 600px;
+  }
+  
+  @include responsive(lg) {
+    height: 700px;
+  }
+}
+
+// Main layout
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  
+  .header {
+    background-color: $dark-color;
+    color: $light-color;
+    padding: $spacing-md 0;
+    
+    .nav {
+      @include flex-between;
+      padding: 0 $spacing-md;
+      
+      .logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+      
+      .nav-links {
+        display: flex;
+        list-style: none;
+        
+        li {
+          margin-left: $spacing-md;
+          
+          a {
+            color: $light-color;
+            
+            &:hover {
+              color: color.adjust($light-color, $lightness: -10%);
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .content {
+    flex: 1;
+    padding: $spacing-lg 0;
+  }
+  
+  .footer {
+    background-color: $dark-color;
+    color: $light-color;
+    padding: $spacing-md 0;
+    text-align: center;
+  }
+}
+
+// Button groups
+.cta-buttons {
+  display: flex;
+  gap: $spacing-sm;
+}
+
+// Page styles
+.map-page {
+  padding: $spacing-md;
+  
+  .map-info {
+    margin-bottom: $spacing-md;
+    padding: $spacing-md;
+    background-color: $light-color;
+    border: $border-width solid $border-color;
+    border-radius: $border-radius;
+    @include shadow-sm;
+  }
+}
