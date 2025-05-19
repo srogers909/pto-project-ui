@@ -1,6 +1,8 @@
-# PTO Project Alpha UI
+# PTO Project UI - (ALPHA)
 
 A React.js UI scaffolding project with custom configuration and integration with the map-controls library.
+
+#### Note: The project is in active development. Results may vary.
 
 ## Features
 
